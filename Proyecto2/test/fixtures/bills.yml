@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  edificio: one
+  ptype: MyString
+  pdate: MyString
+
+two:
+  edificio: two
+  ptype: MyString
+  pdate: MyString

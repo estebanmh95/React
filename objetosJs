@@ -1,0 +1,452 @@
+const users = [
+  {
+    "_id": "5cdb4dd2f86b9b921bb6d779",
+    "index": 0,
+    "guid": "09e8c262-d832-4f23-a06f-ce52bad8ca1b",
+    "isActive": false,
+    "balance": "$3,730.62",
+    "picture": "http://placehold.it/32x32",
+    "age": 39,
+    "eyeColor": "green",
+    "name": {
+      "first": "Carr",
+      "last": "Nolan"
+    },
+    "company": "ZENTIME",
+    "email": "carr.nolan@zentime.org",
+    "phone": "+1 (902) 574-2699",
+    "address": "593 Coleman Street, Herlong, Connecticut, 251",
+    "about": "Ex tempor exercitation veniam occaecat eiusmod elit in mollit enim nostrud voluptate adipisicing ea. Sunt cillum esse voluptate excepteur consequat eu culpa voluptate dolore dolor amet reprehenderit mollit. Cupidatat in non excepteur sint dolore veniam ea culpa veniam eu magna qui dolor enim. Ad cupidatat ipsum dolore irure pariatur laborum ipsum voluptate qui minim aute sit adipisicing.",
+    "registered": "Saturday, November 26, 2016 1:26 AM",
+    "latitude": "-7.923718",
+    "longitude": "-163.938166",
+    "tags": [
+      "in",
+      "minim",
+      "quis",
+      "laboris",
+      "consequat"
+    ],
+    "range": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Angelique Christian"
+      },
+      {
+        "id": 1,
+        "name": "Alba Waller"
+      },
+      {
+        "id": 2,
+        "name": "Battle Suarez"
+      }
+    ],
+    "greeting": "Hello, Carr! You have 8 unread messages.",
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "_id": "5cdb4dd201854e3c9bc5a5da",
+    "index": 1,
+    "guid": "f1c7cb08-76f3-444a-ba74-0ddd485f7ecc",
+    "isActive": true,
+    "balance": "$1,190.54",
+    "picture": "http://placehold.it/32x32",
+    "age": 35,
+    "eyeColor": "blue",
+    "name": {
+      "first": "Rosalyn",
+      "last": "York"
+    },
+    "company": "NETILITY",
+    "email": "rosalyn.york@netility.me",
+    "phone": "+1 (870) 557-3191",
+    "address": "492 Newel Street, Grayhawk, Wyoming, 8884",
+    "about": "Tempor sint sit deserunt reprehenderit nulla sit duis. Velit anim tempor elit magna. Ipsum eiusmod quis reprehenderit quis elit. Sit pariatur elit sit eiusmod qui sint laborum. Excepteur aliqua voluptate cillum pariatur veniam esse.",
+    "registered": "Friday, August 1, 2014 10:51 AM",
+    "latitude": "3.286355",
+    "longitude": "159.382331",
+    "tags": [
+      "ea",
+      "sit",
+      "sint",
+      "id",
+      "est"
+    ],
+    "range": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Bobbie Rocha"
+      },
+      {
+        "id": 1,
+        "name": "Bender Norris"
+      },
+      {
+        "id": 2,
+        "name": "Davenport Klein"
+      }
+    ],
+    "greeting": "Hello, Rosalyn! You have 8 unread messages.",
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "_id": "5cdb4dd202383d5806cb3905",
+    "index": 2,
+    "guid": "6d73e1f1-fbb7-4d97-b198-ee049698f9f4",
+    "isActive": true,
+    "balance": "$2,750.90",
+    "picture": "http://placehold.it/32x32",
+    "age": 35,
+    "eyeColor": "brown",
+    "name": {
+      "first": "Connie",
+      "last": "Chen"
+    },
+    "company": "EXOSPACE",
+    "email": "connie.chen@exospace.co.uk",
+    "phone": "+1 (826) 426-3917",
+    "address": "548 Bryant Street, Barronett, Arizona, 5379",
+    "about": "Do culpa mollit velit sunt voluptate minim incididunt et commodo minim ex. Laborum aliquip quis occaecat eu velit dolor labore. Sit deserunt esse ad ullamco. Velit non est consectetur qui nisi ex do. Excepteur ipsum non id adipisicing ut eu voluptate duis. Irure quis et proident ipsum ipsum sunt est cillum commodo esse do reprehenderit ut. In minim mollit sunt ipsum.",
+    "registered": "Tuesday, March 29, 2016 8:08 PM",
+    "latitude": "16.068935",
+    "longitude": "142.658038",
+    "tags": [
+      "nulla",
+      "non",
+      "do",
+      "esse",
+      "proident"
+    ],
+    "range": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Laurel Mcleod"
+      },
+      {
+        "id": 1,
+        "name": "Stanley Sutton"
+      },
+      {
+        "id": 2,
+        "name": "Rocha Ross"
+      }
+    ],
+    "greeting": "Hello, Connie! You have 6 unread messages.",
+    "favoriteFruit": "banana"
+  },
+  {
+    "_id": "5cdb4dd2eca93ce072c72c9d",
+    "index": 3,
+    "guid": "73f73fdd-b6c2-44ba-8e37-071b17b15f17",
+    "isActive": true,
+    "balance": "$1,635.18",
+    "picture": "http://placehold.it/32x32",
+    "age": 33,
+    "eyeColor": "brown",
+    "name": {
+      "first": "Walsh",
+      "last": "Whitley"
+    },
+    "company": "PORTICA",
+    "email": "walsh.whitley@portica.com",
+    "phone": "+1 (874) 452-2488",
+    "address": "316 Tudor Terrace, Omar, Alaska, 3755",
+    "about": "Minim consequat aute aute aliquip ullamco consequat mollit id enim sit aliquip. Ut reprehenderit dolore qui nisi commodo nisi sunt incididunt ullamco mollit nisi voluptate. Non ullamco sit ea enim ad qui non quis. Ullamco deserunt reprehenderit tempor mollit. Ut veniam sit minim cillum nostrud et occaecat enim proident. Pariatur sint ea incididunt velit laboris non nisi et commodo enim qui. Id elit incididunt dolor in eiusmod elit labore cillum esse ipsum duis.",
+    "registered": "Sunday, November 25, 2018 11:12 AM",
+    "latitude": "14.343659",
+    "longitude": "-149.829236",
+    "tags": [
+      "labore",
+      "ipsum",
+      "culpa",
+      "velit",
+      "qui"
+    ],
+    "range": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Reeves Faulkner"
+      },
+      {
+        "id": 1,
+        "name": "Carrillo Washington"
+      },
+      {
+        "id": 2,
+        "name": "Francis Rasmussen"
+      }
+    ],
+    "greeting": "Hello, Walsh! You have 8 unread messages.",
+    "favoriteFruit": "banana"
+  },
+  {
+    "_id": "5cdb4dd239ff7342ca88f666",
+    "index": 4,
+    "guid": "6526bb54-aa01-4515-9963-cf3a09c63ed2",
+    "isActive": true,
+    "balance": "$3,384.77",
+    "picture": "http://placehold.it/32x32",
+    "age": 37,
+    "eyeColor": "brown",
+    "name": {
+      "first": "Marcella",
+      "last": "Rivera"
+    },
+    "company": "ESSENSIA",
+    "email": "marcella.rivera@essensia.tv",
+    "phone": "+1 (877) 459-2688",
+    "address": "822 Legion Street, Itmann, District Of Columbia, 4322",
+    "about": "Quis ut sit proident labore eu ipsum sunt duis quis officia nisi non pariatur commodo. Sint velit aliqua aliqua elit officia. Excepteur incididunt ad id occaecat. Magna excepteur ea nisi tempor sunt dolore do irure elit ex occaecat. Dolore adipisicing esse fugiat laboris et Lorem mollit ex ea fugiat deserunt dolor.",
+    "registered": "Friday, December 14, 2018 9:48 AM",
+    "latitude": "69.582316",
+    "longitude": "-14.667543",
+    "tags": [
+      "proident",
+      "labore",
+      "voluptate",
+      "Lorem",
+      "pariatur"
+    ],
+    "range": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Eunice Hill"
+      },
+      {
+        "id": 1,
+        "name": "Earline Jefferson"
+      },
+      {
+        "id": 2,
+        "name": "Rosie Salas"
+      }
+    ],
+    "greeting": "Hello, Marcella! You have 5 unread messages.",
+    "favoriteFruit": "banana"
+  },
+  {
+    "_id": "5cdb4dd296d6e9b722f638cc",
+    "index": 5,
+    "guid": "afba1ba2-42af-457c-9f5d-ca4fd63494c1",
+    "isActive": true,
+    "balance": "$2,074.22",
+    "picture": "http://placehold.it/32x32",
+    "age": 26,
+    "eyeColor": "green",
+    "name": {
+      "first": "Fischer",
+      "last": "Garcia"
+    },
+    "company": "FARMAGE",
+    "email": "fischer.garcia@farmage.net",
+    "phone": "+1 (847) 459-3063",
+    "address": "102 Woods Place, Ribera, Colorado, 4001",
+    "about": "Anim et ipsum culpa velit officia aliqua. Ad occaecat dolor consectetur magna aute ex pariatur in minim sint mollit do dolore ipsum. Irure amet in consectetur dolor. Eu tempor ea est nulla ullamco sunt nisi do consectetur anim ad pariatur esse sint. Adipisicing id culpa in reprehenderit ut minim nisi. Velit eiusmod ut culpa sint dolore voluptate occaecat. Minim cupidatat id cillum veniam enim officia culpa velit.",
+    "registered": "Wednesday, July 19, 2017 10:38 AM",
+    "latitude": "34.623391",
+    "longitude": "52.125648",
+    "tags": [
+      "enim",
+      "ullamco",
+      "labore",
+      "ut",
+      "proident"
+    ],
+    "range": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Brittany Franklin"
+      },
+      {
+        "id": 1,
+        "name": "Everett Fleming"
+      },
+      {
+        "id": 2,
+        "name": "Nell Woodard"
+      }
+    ],
+    "greeting": "Hello, Fischer! You have 6 unread messages.",
+    "favoriteFruit": "strawberry"
+  },
+  {
+    "_id": "5cdb4dd284c67e85b5f69b13",
+    "index": 6,
+    "guid": "f8b3ba34-394f-44ad-88f7-7f8ec652b518",
+    "isActive": false,
+    "balance": "$1,488.47",
+    "picture": "http://placehold.it/32x32",
+    "age": 23,
+    "eyeColor": "blue",
+    "name": {
+      "first": "Knox",
+      "last": "Hicks"
+    },
+    "company": "ZOMBOID",
+    "email": "knox.hicks@zomboid.name",
+    "phone": "+1 (841) 480-2405",
+    "address": "624 Danforth Street, Coultervillle, Mississippi, 4626",
+    "about": "Exercitation occaecat aliquip pariatur ea dolor quis proident qui nostrud magna quis. Non proident est dolore reprehenderit qui voluptate labore irure. Qui sit enim consectetur magna. Commodo commodo amet ipsum laborum veniam culpa dolor ut occaecat in dolore. Aliquip cupidatat eu minim ut pariatur. Eu eiusmod sint sit elit cillum ea eiusmod sunt dolor.",
+    "registered": "Wednesday, October 3, 2018 3:30 AM",
+    "latitude": "-79.967632",
+    "longitude": "127.592862",
+    "tags": [
+      "amet",
+      "nisi",
+      "minim",
+      "irure",
+      "nostrud"
+    ],
+    "range": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Heath Harris"
+      },
+      {
+        "id": 1,
+        "name": "Bond Adkins"
+      },
+      {
+        "id": 2,
+        "name": "Gamble Shaffer"
+      }
+    ],
+    "greeting": "Hello, Knox! You have 7 unread messages.",
+    "favoriteFruit": "apple"
+  }
+]
+
+
+users.map(user => {
+    console.log(user.name.last.toLowerCase())
+    console.log(user.name.first.toUpperCase())
+})
+
+
+users.map(user => {
+    const {name} = user
+    const {first, last} = name
+    console.log(first.toUpperCase())
+    console.log(last.toLowerCase())
+    
+})
+
+
+users.map(user => {
+    const {name: {first, last}} = user
+    
+    console.log(first.toUpperCase())
+    console.log(last.toLowerCase())
+    
+})
+
+
+users.map(user => {
+    const {name: {first, last}} = user
+    
+    return {
+        first: first.toUpperCase(),
+        last: last.toLowerCase()
+    }
+})
+
+
+users.map(user => {
+    const {name} = user
+    const {first, last} = name
+    return {
+        first: first.toUpperCase(),
+        last: last.toLowerCase()
+    }
+})
+
+users.map(user => {
+    const {name} = user
+    const {first, last} = name
+    console.log(`${first.toUpperCase()} ${last.toLowerCase()}`)
+    
+})

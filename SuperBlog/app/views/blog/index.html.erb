@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="column-6 offset-1">
+      <%@posts.each do |post|%>
+          <h1><%=post.title%></h1>
+          <p><%=post.content%></p>
+          <p>Publicado por <strong> <%=User.find(post.user_id).username%></strong> hace <strong><%=time_ago_in_words(post.created_at)%></strong></p>
+        <%end%>
+
+      <%=link_to "Logout", destroy_user_session_path, method: :delete %>
+    </div>
+  </div>
+</div>

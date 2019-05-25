@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bill: one
+  tipo: MyString
+  fecha: MyString
+
+two:
+  bill: two
+  tipo: MyString
+  fecha: MyString
